@@ -24,7 +24,7 @@ def show_message(index):
     msg.title("Thông báo")
 
     # Nội dung thông báo
-      label = tk.Label(msg, text=f"Thông báo {index + 1}", font=("Arial", 10))
+    label = tk.Label(msg, text=f"Thông báo {index + 1}", font=("Arial", 10))
     label.pack(pady=5)
     label2 = tk.Label(msg, text="ensting in here ", font=("Arial", 12))
     label2.pack(pady=10)
