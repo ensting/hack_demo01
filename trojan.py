@@ -9,7 +9,7 @@ screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
 
-positions = [(random.randint(0, screen_width - 200), random.randint(0, screen_height - 100)) for _ in range(2)]
+positions = [(random.randint(0, screen_width - 200), random.randint(0, screen_height - 100)) for _ in range(20)]
 
 def show_message(index):
     """Hiển thị thông báo tại vị trí index trong danh sách positions."""
