@@ -9,7 +9,7 @@ screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
 # Tạo danh sách 10 vị trí ngẫu nhiên
-positions = [(random.randint(0, screen_width - 200), random.randint(0, screen_height - 100)) for _ in range(10)]
+positions = [(random.randint(0, screen_width - 200), random.randint(0, screen_height - 100)) for _ in range(20)]
 
 def show_message(index):
     """Hiển thị thông báo tại vị trí index trong danh sách positions."""
@@ -24,8 +24,10 @@ def show_message(index):
     msg.title("Thông báo")
 
     # Nội dung thông báo
-    label = tk.Label(msg, text=f"Thông báo {index + 1}", font=("Arial", 12))
-    label.pack(pady=10)
+      label = tk.Label(msg, text=f"Thông báo {index + 1}", font=("Arial", 10))
+    label.pack(pady=5)
+    label2 = tk.Label(msg, text="ensting in here ", font=("Arial", 12))
+    label2.pack(pady=10)
 
     # Nút đóng để mở cửa sổ tiếp theo
     button = tk.Button(msg, text="OK", command=lambda: (msg.destroy(), show_message(index + 1)))
